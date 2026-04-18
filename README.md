@@ -24,3 +24,33 @@ L’objectif est de préparer la mise en production sécurisée d’une applicat
 npm install
 node src/server.js
 
+---
+
+## 📡 API
+
+### GET /api/taches
+Retourne la liste des tâches
+
+### POST /api/taches
+Crée une nouvelle tâche
+
+Body JSON :
+{
+  "titre": "Nouvelle tâche",
+  "description": "Description",
+  "colonneId": 1
+}
+
+---
+
+## 🧪 Tests
+
+Les tests sont réalisés avec Vitest et Supertest.
+
+Ils permettent de vérifier :
+- les codes HTTP
+- le format des réponses JSON
+- la création de tâches
+
+Commande :
+npm test
