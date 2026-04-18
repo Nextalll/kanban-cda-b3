@@ -24,10 +24,3 @@ L’objectif est de préparer la mise en production sécurisée d’une applicat
 npm install
 node src/server.js
 
-🧪 Tests
-
-npm test
-
-🐳 Docker
-docker build -t kanban-backend .
-docker run -p 3000:3000 kanban-backend
